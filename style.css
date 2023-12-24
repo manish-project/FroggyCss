@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@700&family=Poppins:wght@200;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  background-color: #43a047;
+  font-family: "PT Sans Caption", sans-serif;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.left {
+  width: 50vw;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.logo {
+  margin-left: 20px;
+  font-family: "Fredoka", "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.level {
+  margin-right: 2%;
+  justify-content: center;
+  width: 7vw;
+  height: 3vh;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  color: white;
+}
+.right {
+  display: flex;
+  /* justify-content: center; */
+  width: 47vw;
+  height: 100vh;
+  background-color: #1f5768;
+}
+
+.main {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.prop {
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+ul li {
+  padding-top: 3px;
+}
+.content {
+  margin-top: 18px;
+  margin-left: 60px;
+  font-size: 13px;
+}
+.hero {
+  display: flex;
+}
+.number {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 1.5;
+  font-size: 15px;
+  height: 25vh;
+  width: 1.7vw;
+  padding: 5px 6px;
+  background-color: rgb(139, 137, 137);
+  color: white;
+  opacity: 0.8;
+}
+.inputField {
+  position: relative;
+  height: 26vh;
+  width: 44vw;
+  background-color: #e0e0e0;
+  color: #777;
+  font-size: 18px;
+}
+.inputBox {
+  display: inline-block;
+  background-color: white;
+  border: 0.9px solid black;
+  margin-left: 15px;
+  border: none;
+  height: 1.3vw;
+  width: 42vw;
+}
+.btn {
+  position: absolute;
+  height: 3.5vh;
+  width: 4vw;
+  top: 80%;
+  left: 87%;
+  border: none;
+  opacity: 0.7;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(255, 118, 118);
+}
+.link{
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
