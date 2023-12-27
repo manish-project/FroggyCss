@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style>.position {
-      display: flex;
-      justify-content: space-between;
-      height: 20vh;
-      width: 47vw;
-    }
-    .frogBox {
-      display: flex;
-      padding: 30px;
-    }
-    .frog {
-      background-size: 75% 75%;
-      background-repeat: no-repeat;
-      height: 15vh;
-      width: 8vw;
-      /* animation-iteration-count: infinite;
-      animation-name: frog;
-      animation-duration: 1s;
-      animation-fill-mode: both; */
-    }
-    .green-frog{
-      background-image: url("https://flexboxfroggy.com/images/frog-green.svg");
-    
-    }
-    .pond {
-  justify-content: flex-end;
-  background-image: url("https://flexboxfroggy.com/images/lilypad-green.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 15vh;
-  width: 8vw;
-  z-index: 18;
-  transform: rotate(120deg);
-}
-</style>
+    <style>
+      .position {
+        display: flex;
+        height: 20vh;
+        width: 47vw;
+      }
+      .frogBox {
+        padding-top: 5%;
+        padding-left: 3px;
+        
+      }
+      .frog {
+        margin-top: 7%;
+        background-size: 65% 65%;
+        background-repeat: no-repeat;
+        height: 15vh;
+        width: 8vw;
+        /* animation-iteration-count: infinite;
+  animation-name: frog;
+  animation-duration: 1s;
+  animation-fill-mode: both; */
+      }
+      .green-frog {
+        background-image: url("https://flexboxfroggy.com/images/frog-green.svg");
+      }
+      .yellow-frog {
+        background-image: url("https://flexboxfroggy.com/images/frog-yellow.svg");
+      }
+
+      .pond {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 80%;
+        width: 8vw;
+        /* z-index: 18; */
+        
+      }
+
+      .green-pond {
+        background-image: url("https://flexboxfroggy.com/images/lilypad-green.svg");
+        transform: rotate(160deg);
+      }
+
+      .yellow-pond {
+        background-image: url("	https://flexboxfroggy.com/images/lilypad-yellow.svg");
+        transform: rotate(30deg);
+
+      }
+      .pondContainer{
+        display: flex;
+        position: relative;
+        margin-left: 190px;
+      }
+      .frogContainer{
+        display: flex;
+        position: absolute;
+        z-index: 30;
+               
+      }
+      
+    </style>
   </head>
   <body>
     <div class="left">
@@ -52,10 +78,9 @@
         </div>
       </header>
       <p class="main">
-        Welcome to Flexbox Froggy, a game where you help Froggy and friends by
-        writing CSS code! Guide this frog to the lilypad on the right by using
-        the <span class="prop">justify-content </span> property, which aligns
-        items horizontally and accepts the following values:
+        Use <span class="prop">justify-content </span> again to help these frogs
+        get to their lilypads. Remember that this CSS property aligns items
+        horizontally and accepts the following values:
       </p>
       <ul class="content">
         <li>
@@ -79,10 +104,6 @@
           spacing around them.
         </li>
       </ul>
-      <p class="main">
-        For example, <span class="prop">justify-content: flex-end;</span> will
-        move the frog to the right.
-      </p>
       <div class="hero main">
         <div class="number">
           1 <br />
@@ -122,11 +143,21 @@
     </div>
     <div class="right">
       <div class="position">
-        <div class="frogBox">
-          <div class="frog green-frog"></div>
+        <div class="frogContainer">
+          <div class="frogBox">
+            <div class="frog green-frog"></div>
+          </div>
+          <div class="frogBox">
+            <div class="yellow-frog frog"></div>
+          </div>
         </div>
-        <div class="frogBox">
-          <div class="pond"></div>
+        <div class="pondContainer">
+          <div class="frogBox">
+            <div class="pond green-pond"></div>
+          </div>
+          <div class="frogBox">
+            <div class="yellow-pond pond"></div>
+          </div>
         </div>
       </div>
     </div>

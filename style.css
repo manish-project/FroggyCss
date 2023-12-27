@@ -96,7 +96,7 @@ ul li {
   border: 0.9px solid black;
   margin-left: 15px;
   border: none;
-  height: 1.3vw;
+  height: 3vh;
   width: 42vw;
 }
 .btn {
@@ -110,9 +110,62 @@ ul li {
   color: white;
   border-radius: 5px;
   background-color: rgb(255, 118, 118);
+  cursor: pointer;
 }
-.link{
+.link {
   display: flex;
   justify-content: center;
   margin-top: 18px;
+  font-size: 12px;
+}
+.linkTag {
+  list-style: none;
+  color: white;
+  font-weight: 100;
+}
+.setting {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  height: 20px;
+  width: 70px;
+  cursor: pointer;
+  border: none;
+}
+.position {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  width: 47vw;
+}
+.frogBox {
+  display: flex;
+  padding: 30px;
+}
+.frog {
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 8vw;
+  /* animation-iteration-count: infinite;
+  animation-name: frog;
+  animation-duration: 1s;
+  animation-fill-mode: both; */
+}
+.green-frog{
+  background-image: url("https://flexboxfroggy.com/images/frog-green.svg");
+
+}
+.yellow-frog{
+  background-image: url("https://flexboxfroggy.com/images/frog-yellow.svg");
+}
+.pond {
+  justify-content: flex-end;
+  background-image: url("https://flexboxfroggy.com/images/lilypad-green.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 8vw;
+  z-index: 18;
+  transform: rotate(120deg);
 }
