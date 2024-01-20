@@ -30,8 +30,8 @@ header {
 .level {
   margin-right: 2%;
   justify-content: center;
-  width: 7vw;
-  height: 3vh;
+  width: 9vw;
+  height: 3.5vh;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -39,11 +39,43 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
   opacity: 0.8;
   color: white;
+  border-radius: 5%;
+}
+.level-indicator{
+ padding-left: 25px;
+ padding-right: 25px;
+}
+.dropdown{
+  display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    cursor: pointer;
+  border-top: 7px solid rgba(255, 255, 255, 0.7);
+  
+}
+.triangle{
+  display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    cursor: pointer;
+}
+.triangle-left{
+  
+  border-right: 11px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.triangle-right{
+  border-left: 11px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 .right {
   display: flex;
   /* justify-content: center; */
-  width: 47vw;
+  width: 47.5vw;
   height: 100vh;
   background-color: #1f5768;
 }
@@ -106,10 +138,10 @@ ul li {
   top: 80%;
   left: 87%;
   border: none;
-  opacity: 0.7;
+  opacity: 0.9;
   color: white;
   border-radius: 5px;
-  background-color: rgb(255, 118, 118);
+  background-color: rgb(228, 95, 95);
   cursor: pointer;
 }
 .link {
@@ -132,7 +164,7 @@ ul li {
   cursor: pointer;
   border: none;
 }
-.position {
+/* .position {
   display: flex;
   justify-content: space-between;
   height: 20vh;
@@ -141,24 +173,19 @@ ul li {
 .frogBox {
   display: flex;
   padding: 30px;
-}
-.frog {
+} */
+/* .frog {
   background-size: 75% 75%;
   background-repeat: no-repeat;
   height: 15vh;
   width: 8vw;
-  /* animation-iteration-count: infinite;
-  animation-name: frog;
-  animation-duration: 1s;
-  animation-fill-mode: both; */
-}
-.green-frog{
+ 
+} */
+/* .green-frog{
   background-image: url("https://flexboxfroggy.com/images/frog-green.svg");
 
 }
-.yellow-frog{
-  background-image: url("https://flexboxfroggy.com/images/frog-yellow.svg");
-}
+
 .pond {
   justify-content: flex-end;
   background-image: url("https://flexboxfroggy.com/images/lilypad-green.svg");
@@ -169,3 +196,7 @@ ul li {
   z-index: 18;
   transform: rotate(120deg);
 }
+
+.yellow-pond{
+  background-image: url("	https://flexboxfroggy.com/images/lilypad-yellow.svg");
+} */
